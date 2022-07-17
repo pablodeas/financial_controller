@@ -1,43 +1,15 @@
-# --- Programa de Controle Financeiro ---
-import tkinter as tk
+# Primeira Parte
 
-print("Abaixo você terá uma conta básica. Essa conta determinará se você está mantendo uma vida financeira estável!. \n")
+print("Calculadora financeira 50/30/20/")
 
-x = int(input("Digite a soma de todos os valores recebidos mensalmente: \n"))
-y = int(input("Digite a soma de todos os seus gastos mensais: \n"))
-z = x-y
+rl = int(input("Digite seu rendimento líquido mensal: "))
 
-if x - y < z:
-    print("Os seus gastos estão acima de 1/3 da sua renda. \n")
-elif x - y == z:
-    print("Os seus gastos estão exatamente 1/3 da sua renda. \n")
-elif x - y > z:
-    print("Os seus gastos estão acima de 1/3 da sua renda, continue assim!. \n")
+cs = rl*(50/100)
+print("Custos Essenciais: ", cs)
 
-print("Renda mensal total: ", x)
-print("Gastos mensais totais: ", y)
-print("Renda menos os Gastos: ", z)
+cp = rl*(30/100)
+print("Custos Pessoais: ", cp)
 
-# --- Abaixo o banco de dados. ---
-
-# Primeiro precisa ser criado um Dicionário que armazenará os valores do programa.
-
-#from datetime import date
-
-#x = date.today()
-#y = input("Valor: ")
-#q = ("15/03/1998")
-#z = input("Valor2: ")
-
-#data_base = {y:x, q:z}
-
-#Para imprimir todos os valores
-#print(data_base)
-
-#Para puxar a data desejada
-#print(data_base.get(input("Escolha a data: ")))
-
-
-
-
+r = rl*(20/100)
+print("Reserva: ", r)
 
